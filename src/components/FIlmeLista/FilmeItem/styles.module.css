@@ -1,0 +1,27 @@
+.filmeContainer {
+    width: 240px;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+    display: grid;
+    grid-template-rows: 6fr 2fr;
+    cursor: pointer;
+
+}
+
+.filmeContainer .bannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: go-back 2s;
+}
+
+.filmeContainer .tituloContainer {
+    width: 90%;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

@@ -1,0 +1,14 @@
+@media (max-width: 720px) {
+    .listaFilmeContainer{
+        display: grid;  
+        grid-template-columns: 1fr !important;
+        gap: 4px 4px;
+    }
+}
+
+.listaFilmeContainer{
+    width: 100%;
+    display: grid;  
+    grid-template-columns: repeat(5,1fr);
+    gap: 4px 4px;
+}
