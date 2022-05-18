@@ -1,0 +1,19 @@
+.footerPageNavigatorContainer {
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footerPageNavigatorContainer .paginasEnumeradasContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.footerPageNavigatorContainer .paginasEnumeradasContainer .paginaBtnText {
+    font-size: 1.5rem;
+    margin: 0 4px;
+}
