@@ -1,0 +1,12 @@
+.logos_container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr, 3fr;
+}
+
+.logos_container .logos_img_container {
+    margin-left: 8px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
