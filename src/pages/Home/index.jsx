@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { movieApi, defaultParams } from '../../services/api'
+import { movieApi } from '../../services/api'
 import { FilmeLista } from '../../components/FIlmeLista'
 import styles from './styles.module.css'
 
@@ -10,7 +10,7 @@ export const Home = () => {
 
     const getListaFilmes = useCallback(async (nrPaginaBusca) => {
         const { status, data } = await movieApi.get('/discover/movie?', {
-            params: { ...defaultParams, page: nrPaginaBusca },
+            params: { page: nrPaginaBusca },
         })
         if (status === 200) {
             setLsFilme((old) => [...old, ...data['results']])
